@@ -6,7 +6,7 @@
 /*   By: juhagon <juhagon@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 09:53:17 by juhagon           #+#    #+#             */
-/*   Updated: 2021/11/27 16:02:19 by juhagon          ###   ########.fr       */
+/*   Updated: 2022/02/04 11:49:22 by juhagon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ int	ft_atoi(const char *s)
 	tmp = 0;
 	nmb = 0;
 	sign = 0;
-	while (s[tmp] == 32 || s[tmp] == '\n' || \
-	s[tmp] == '\v' || s[tmp] == '\r' || s[tmp] == '\t' || s[tmp] == '\f')
+	while (s[tmp] == 32 || (s[tmp] > 8 && s[tmp] < 14))
 		tmp++;
 	if (s[tmp] == '+')
 		tmp++;

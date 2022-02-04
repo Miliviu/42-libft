@@ -6,7 +6,7 @@
 /*   By: juhagon <juhagon@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:06:04 by juhagon           #+#    #+#             */
-/*   Updated: 2022/01/25 09:56:31 by juhagon          ###   ########.fr       */
+/*   Updated: 2022/02/04 11:42:35 by juhagon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,5 @@ void	ft_putstr_fd(char *s, int fd)
 	if (!s)
 		return ;
 	while (s[i])
-	{
-		ft_putchar_fd(s[i], fd);
-		i++;
-	}
+		ft_putchar_fd(s[i++], fd);
 }
